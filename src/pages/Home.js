@@ -5,9 +5,6 @@ import SubVisual from "../components/SubVisual";
 import { movieAction } from "../redux/actions/movieAction";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import InfoIcon from "@mui/icons-material/Info";
-import Modal from "@mui/material/Modal";
-import CloseIcon from "@mui/icons-material/Close";
-import YouTube from "react-youtube";
 import YoutubeModal from "../components/YoutubeModal";
 
 const Home = () => {
