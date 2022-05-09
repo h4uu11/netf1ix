@@ -1,4 +1,3 @@
-import { Route, Routes } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -8,8 +7,10 @@ import Movie from "./pages/Movie";
 import Home from "./pages/Home";
 import Tv from "./pages/Tv";
 import Detail from "./pages/Detail";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
+  console.log(process.env.PUBLIC_URL);
   return (
     <>
       <Header />
@@ -17,7 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/movie" element={<Movie />} />
         <Route path="/tv" element={<Tv />} />
-        <Route path="/:videoType/:id" element={<Detail />} />
+        <Route path="/:videoType/:id" element={<Detail />} />{" "}
+        <Route path="*" element={<p>There's nothing here!!!!!!!!!!!!!!!</p>} />
       </Routes>
     </>
   );
