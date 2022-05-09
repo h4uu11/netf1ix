@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to={"/"} className="logo">
-        <img src="/assets/img/netf1ix.svg" alt="" />
+        <img src={require('../assets/img/netf1ix.svg').default} alt='' />
       </Link>
       <Link to={"/"}>Home</Link>
       <Link to={"/movie"}>Movies</Link>
