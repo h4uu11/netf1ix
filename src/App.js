@@ -10,7 +10,6 @@ import Detail from "./pages/Detail";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  console.log(process.env.PUBLIC_URL);
   return (
     <>
       <Header />
